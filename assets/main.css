@@ -1,0 +1,75 @@
+.roulette_container{
+    width: 300px;
+    height: 300px;
+}
+
+/* checkbox */
+
+input[type=radio], input[type=checkbox] {
+    display: none;
+}
+input[type=radio] + label, input[type=checkbox] + label {
+    position: relative;
+    padding-left: 24px;
+    padding-top: 2px;
+}
+
+input[type=checkbox] + label::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #9E9E9E;
+    border-radius: 2px;
+    transition: .2s;
+}
+input[type=checkbox]:checked + label::before {
+    border: 8px solid #6255F2;
+}
+input[type=checkbox] + label::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 11px;
+    left: 3px;
+    width: 0;
+    height: 0;
+    transform: rotate(-45deg);
+    transform-origin: left top;
+    border-left: 2px solid #FFF;
+    border-bottom: 2px solid #FFF;
+    visibility: hidden;
+}
+input[type=checkbox]:checked + label::after {
+    animation: check .175s ease .2s 1 normal forwards;
+}
+@keyframes check {
+    0% {
+        visibility: visible;
+        width: 0;
+        height: 0;
+    }
+    40% {
+        width: 0;
+        height: 8px;
+    }
+    100% {
+        visibility: visible;
+        width: 12px;
+        height: 8px;
+    }
+}
+
+/* モーダルの武器画像 */
+.weapon-modal-image{
+    height: 20px;
+}
+
+.weapon-rourlette-image{
+    width: 640px;
+}
