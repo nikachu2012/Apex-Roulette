@@ -1,30 +1,37 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" crossorigin>
 
-    <link href="https://cdn.jsdelivr.net/gh/djibe/material@4.6.0-rc.2/css/material.min.css" rel="stylesheet" crossorigin>
+    <link href="https://cdn.jsdelivr.net/gh/djibe/material@4.6.0-rc.2/css/material.min.css" rel="stylesheet"
+        crossorigin>
 
     <link rel="stylesheet" href="assets/main.css">
 
     <title>Apexルーレット</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
         <a class="navbar-brand" href="index.html">
-            <img src="image/apex-white-icon.svg" width="30" height="30" class="d-inline-block align-top mr-3 rounded" alt="ApexIcon">
+            <img src="image/apex-white-icon.svg" width="30" height="30" class="d-inline-block align-top mr-3 rounded"
+                alt="ApexIcon">
             Apexルーレット
         </a>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
@@ -38,13 +45,15 @@
                     <a class="nav-link" href="character.html">キャラクター</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         製作者
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="https://portfolio.nikachu.net">ポートフォリオ</a>
                         <a class="dropdown-item" href="https://twitter.com/nikachu2012">ツイッター</a>
-                        <a class="dropdown-item" href="https://www.youtube.com/channel/UCFpf0NiVpZnm6gtpQg7VE6g">Youtubeチャンネル</a>
+                        <a class="dropdown-item"
+                            href="https://www.youtube.com/channel/UCFpf0NiVpZnm6gtpQg7VE6g">Youtubeチャンネル</a>
                         <a class="dropdown-item" href="https://github.com/nikachu2012">GitHub</a>
                     </div>
                 </li>
@@ -67,130 +76,170 @@
 
     <!-- 出す武器の設定 -->
 
-    <div class="modal fade" id="WeaponONOFFmodal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="WeaponONOFFmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">出す武器の設定</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                    <h5 class="modal-title" id="exampleModalLabel">出す武器の設定</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
                     <h6>アサルトライフル(AR)</h6>
 
                     <input class="form-check-input" type="checkbox" id="we_ar_r301" checked>
-                    <label class="form-check-label" for="we_ar_r301"><img class="weapon-modal-image" src="image/ar/r301.png">&nbsp;R-301カービン</label><br>
+                    <label class="form-check-label" for="we_ar_r301"><img class="weapon-modal-image"
+                            src="image/ar/r301.png">&nbsp;R-301カービン</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_ar_furatora" checked>
-                    <label class="form-check-label" for="we_ar_furatora"><img class="weapon-modal-image" src="image/ar/furatora.png">&nbsp;VK-47フラットライン</label><br>
+                    <label class="form-check-label" for="we_ar_furatora"><img class="weapon-modal-image"
+                            src="image/ar/furatora.png">&nbsp;VK-47フラットライン</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_ar_habokku" checked>
-                    <label class="form-check-label" for="we_ar_habokku"><img class="weapon-modal-image" src="image/ar/habokku.png">&nbsp;ハボックライフル</label><br>
+                    <label class="form-check-label" for="we_ar_habokku"><img class="weapon-modal-image"
+                            src="image/ar/habokku.png">&nbsp;ハボックライフル</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_ar_hemurokku" checked>
-                    <label class="form-check-label" for="we_ar_hemurokku"><img class="weapon-modal-image" src="image/ar/hemurokku.png">&nbsp;ヘムロックバーストAR</label><br>
-                
-                    <br><h6>サブマシンガン(SMG)</h6>
+                    <label class="form-check-label" for="we_ar_hemurokku"><img class="weapon-modal-image"
+                            src="image/ar/hemurokku.png">&nbsp;ヘムロックバーストAR</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="we_ar_nemesisu" checked>
+                    <label class="form-check-label" for="we_ar_nemesisu"><img class="weapon-modal-image"
+                            src="image/ar/nemesisu.png">&nbsp;ネメシス</label><br>
+
+                    <br>
+                    <h6>サブマシンガン(SMG)</h6>
 
                     <input class="form-check-input" type="checkbox" id="we_smg_puraura-" checked>
-                    <label class="form-check-label" for="we_smg_puraura-"><img class="weapon-modal-image" src="image/smg/puraura-.png">&nbsp;プラウラーバーストPDW</label><br>
+                    <label class="form-check-label" for="we_smg_puraura-"><img class="weapon-modal-image"
+                            src="image/smg/puraura-.png">&nbsp;プラウラーバーストPDW</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_smg_boruto" checked>
-                    <label class="form-check-label" for="we_smg_boruto"><img class="weapon-modal-image" src="image/smg/boruto.png">&nbsp;ボルトSMG</label><br>
+                    <label class="form-check-label" for="we_smg_boruto"><img class="weapon-modal-image"
+                            src="image/smg/boruto.png">&nbsp;ボルトSMG</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_smg_car" checked>
-                    <label class="form-check-label" for="we_smg_car"><img class="weapon-modal-image" src="image/smg/car.png">&nbsp;C.A.R. SMG</label><br>
+                    <label class="form-check-label" for="we_smg_car"><img class="weapon-modal-image"
+                            src="image/smg/car.png">&nbsp;C.A.R. SMG</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_smg_r99" checked>
-                    <label class="form-check-label" for="we_smg_r99"><img class="weapon-modal-image" src="image/smg/r99.png">&nbsp;R-99 SMG</label><br>
-              
-                    <input class="form-check-input" type="checkbox" id="we_smg_orutane-ta-" checked>
-                    <label class="form-check-label" for="we_smg_orutane-ta-"><img class="weapon-modal-image" src="image/smg/orutane-ta-.png">&nbsp;オルタネーターSMG</label><br>
+                    <label class="form-check-label" for="we_smg_r99"><img class="weapon-modal-image"
+                            src="image/smg/r99.png">&nbsp;R-99 SMG</label><br>
 
-                    <br><h6>ライトマシンガン(LMG)</h6>
+                    <input class="form-check-input" type="checkbox" id="we_smg_orutane-ta-" checked>
+                    <label class="form-check-label" for="we_smg_orutane-ta-"><img class="weapon-modal-image"
+                            src="image/smg/orutane-ta-.png">&nbsp;オルタネーターSMG</label><br>
+
+                    <br>
+                    <h6>ライトマシンガン(LMG)</h6>
 
                     <input class="form-check-input" type="checkbox" id="we_lmg_Lstar" checked>
-                    <label class="form-check-label" for="we_lmg_Lstar"><img class="weapon-modal-image" src="image/lmg/Lstar.png">&nbsp;L-スターEMG</label><br>
+                    <label class="form-check-label" for="we_lmg_Lstar"><img class="weapon-modal-image"
+                            src="image/lmg/Lstar.png">&nbsp;L-スターEMG</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_lmg_supitto-faia-" checked>
-                    <label class="form-check-label" for="we_lmg_supitto-faia-"><img class="weapon-modal-image" src="image/lmg/supitto-faia-.png">&nbsp;M600スピットファイア</label><br>
+                    <label class="form-check-label" for="we_lmg_supitto-faia-"><img class="weapon-modal-image"
+                            src="image/lmg/supitto-faia-.png">&nbsp;M600スピットファイア</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_lmg_deliulo-syon" checked>
-                    <label class="form-check-label" for="we_lmg_deliulo-syon"><img class="weapon-modal-image" src="image/lmg/deliulo-syon.png">&nbsp;ディヴォーションLMG</label><br>
+                    <label class="form-check-label" for="we_lmg_deliulo-syon"><img class="weapon-modal-image"
+                            src="image/lmg/deliulo-syon.png">&nbsp;ディヴォーションLMG</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_lmg_ranpe-ji" checked>
-                    <label class="form-check-label" for="we_lmg_ranpe-ji"><img class="weapon-modal-image" src="image/lmg/ranpe-ji.png">&nbsp;ランページLMG</label><br>
+                    <label class="form-check-label" for="we_lmg_ranpe-ji"><img class="weapon-modal-image"
+                            src="image/lmg/ranpe-ji.png">&nbsp;ランページLMG</label><br>
 
-                    <br><h6>スナイパーライフル(SR)</h6>
+                    <br>
+                    <h6>スナイパーライフル(SR)</h6>
 
                     <input class="form-check-input" type="checkbox" id="we_sr_charge" checked>
-                    <label class="form-check-label" for="we_sr_charge"><img class="weapon-modal-image" src="image/sr/charge.png">&nbsp;チャージライフル</label><br>
+                    <label class="form-check-label" for="we_sr_charge"><img class="weapon-modal-image"
+                            src="image/sr/charge.png">&nbsp;チャージライフル</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_sr_rongubou" checked>
-                    <label class="form-check-label" for="we_sr_rongubou"><img class="weapon-modal-image" src="image/sr/rongubou.png">&nbsp;ロングボウDMR</label><br>
+                    <label class="form-check-label" for="we_sr_rongubou"><img class="weapon-modal-image"
+                            src="image/sr/rongubou.png">&nbsp;ロングボウDMR</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_sr_kure-ba-" checked>
-                    <label class="form-check-label" for="we_sr_kure-ba-"><img class="weapon-modal-image" src="image/sr/kure-ba-.png">&nbsp;クレーバー.50スナイパー</label><br>
+                    <label class="form-check-label" for="we_sr_kure-ba-"><img class="weapon-modal-image"
+                            src="image/sr/kure-ba-.png">&nbsp;クレーバー.50スナイパー</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_sr_sentineru" checked>
-                    <label class="form-check-label" for="we_sr_sentineru"><img class="weapon-modal-image" src="image/sr/sentineru.png">&nbsp;センチネル</label><br>
+                    <label class="form-check-label" for="we_sr_sentineru"><img class="weapon-modal-image"
+                            src="image/sr/sentineru.png">&nbsp;センチネル</label><br>
 
-                    <br><h6>ショットガン(SG)</h6>
+                    <br>
+                    <h6>ショットガン(SG)</h6>
 
                     <input class="form-check-input" type="checkbox" id="we_sg_pi-suki-pa-" checked>
-                    <label class="form-check-label" for="we_sg_pi-suki-pa-"><img class="weapon-modal-image" src="image/sg/pi-suki-pa-.png">&nbsp;ピースキーパー</label><br>
+                    <label class="form-check-label" for="we_sg_pi-suki-pa-"><img class="weapon-modal-image"
+                            src="image/sg/pi-suki-pa-.png">&nbsp;ピースキーパー</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_sg_masutelifu" checked>
-                    <label class="form-check-label" for="we_sg_masutelifu"><img class="weapon-modal-image" src="image/sg/masutelifu.png">&nbsp;マスティフショットガン</label><br>
+                    <label class="form-check-label" for="we_sg_masutelifu"><img class="weapon-modal-image"
+                            src="image/sg/masutelifu.png">&nbsp;マスティフショットガン</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_sg_eva-8" checked>
-                    <label class="form-check-label" for="we_sg_eva-8"><img class="weapon-modal-image" src="image/sg/eva-8.png">&nbsp;EVA-8オート</label><br>
+                    <label class="form-check-label" for="we_sg_eva-8"><img class="weapon-modal-image"
+                            src="image/sg/eva-8.png">&nbsp;EVA-8オート</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_sg_mozan" checked>
-                    <label class="form-check-label" for="we_sg_mozan"><img class="weapon-modal-image" src="image/sg/mozan.png">&nbsp;モザンビークショットガン</label><br>
+                    <label class="form-check-label" for="we_sg_mozan"><img class="weapon-modal-image"
+                            src="image/sg/mozan.png">&nbsp;モザンビークショットガン</label><br>
 
-                    <br><h6>マークスマン武器</h6>
+                    <br>
+                    <h6>マークスマン武器</h6>
 
                     <input class="form-check-input" type="checkbox" id="we_marksman_triple-take" checked>
-                    <label class="form-check-label" for="we_marksman_triple-take"><img class="weapon-modal-image" src="image/marksman/triple-take.png">&nbsp;トリプルテイク</label><br>
+                    <label class="form-check-label" for="we_marksman_triple-take"><img class="weapon-modal-image"
+                            src="image/marksman/triple-take.png">&nbsp;トリプルテイク</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_marksman_g7" checked>
-                    <label class="form-check-label" for="we_marksman_g7"><img class="weapon-modal-image" src="image/marksman/g7.png">&nbsp;G7スカウト</label><br>
+                    <label class="form-check-label" for="we_marksman_g7"><img class="weapon-modal-image"
+                            src="image/marksman/g7.png">&nbsp;G7スカウト</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_marksman_3030repeater" checked>
-                    <label class="form-check-label" for="we_marksman_3030repeater"><img class="weapon-modal-image" src="image/marksman/3030repeater.png">&nbsp;30-30リピーター</label><br>
+                    <label class="form-check-label" for="we_marksman_3030repeater"><img class="weapon-modal-image"
+                            src="image/marksman/3030repeater.png">&nbsp;30-30リピーター</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_marksman_bosekku" checked>
-                    <label class="form-check-label" for="we_marksman_bosekku"><img class="weapon-modal-image" src="image/marksman/bosekku.png">&nbsp;ボセックコンパウンドボウ</label><br>
+                    <label class="form-check-label" for="we_marksman_bosekku"><img class="weapon-modal-image"
+                            src="image/marksman/bosekku.png">&nbsp;ボセックコンパウンドボウ</label><br>
 
-                    <br><h6>ピストル</h6>
+                    <br>
+                    <h6>ピストル</h6>
 
                     <input class="form-check-input" type="checkbox" id="we_pistol_p2020" checked>
-                    <label class="form-check-label" for="we_pistol_p2020"><img class="weapon-modal-image" src="image/pistol/p2020.png">&nbsp;P2020</label><br>
+                    <label class="form-check-label" for="we_pistol_p2020"><img class="weapon-modal-image"
+                            src="image/pistol/p2020.png">&nbsp;P2020</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_pistol_ulinguman" checked>
-                    <label class="form-check-label" for="we_pistol_ulinguman"><img class="weapon-modal-image" src="image/pistol/ulinguman.png">&nbsp;ウィングマン</label><br>
+                    <label class="form-check-label" for="we_pistol_ulinguman"><img class="weapon-modal-image"
+                            src="image/pistol/ulinguman.png">&nbsp;ウィングマン</label><br>
 
                     <input class="form-check-input" type="checkbox" id="we_pistol_re45" checked>
-                    <label class="form-check-label" for="we_pistol_re45"><img class="weapon-modal-image" src="image/pistol/re45.png">&nbsp;RE-45オート</label><br>
+                    <label class="form-check-label" for="we_pistol_re45"><img class="weapon-modal-image"
+                            src="image/pistol/re45.png">&nbsp;RE-45オート</label><br>
 
 
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
-                <button type="button" class="btn btn-primary" onclick="saveModal()">決定</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                    <button type="button" class="btn btn-primary" onclick="saveModal()">決定</button>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin></script>
     <script src="https://cdn.jsdelivr.net/gh/djibe/material@4.6.0-rc.2/js/material.min.js" crossorigin></script>
 
     <script src="assets/roulette.min.js"></script>
 
     <script src="assets/weapon.js"></script>
 </body>
+
 </html>

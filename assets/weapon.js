@@ -7,12 +7,13 @@ apex.version = "1.0";
 
 // onload
 window.onload = function () {
-    weapon.length = 28;
+    weapon.length = 29;
     weapon.picture = `
         <img src="image/ar/r301.png">
         <img src="image/ar/furatora.png">
         <img src="image/ar/habokku.png">
         <img src="image/ar/hemurokku.png">
+        <img src="image/ar/nemesisu.png">
 
         <img src="image/smg/puraura-.png">
         <img src="image/smg/boruto.png">
@@ -58,6 +59,7 @@ window.onload = function () {
     we_ar_furatora = document.getElementById('we_ar_furatora')
     we_ar_habokku = document.getElementById('we_ar_habokku')
     we_ar_hemurokku = document.getElementById('we_ar_hemurokku')
+    we_ar_hemurokku = document.getElementById('we_ar_nemesisu')
 
     we_smg_purauraa = document.getElementById('we_smg_puraura-')
     we_smg_boruto = document.getElementById('we_smg_boruto')
@@ -216,6 +218,7 @@ function saveModal() {
     if (we_ar_furatora.checked) { weapon.length = weapon.length + 1; weapon.picture = weapon.picture + '<img src="image/ar/furatora.png">'; }
     if (we_ar_habokku.checked) { weapon.length = weapon.length + 1; weapon.picture = weapon.picture + '<img src="image/ar/habokku.png">'; }
     if (we_ar_hemurokku.checked) { weapon.length = weapon.length + 1; weapon.picture = weapon.picture + '<img src="image/ar/hemurokku.png">'; }
+    if (we_ar_nemesisu.checked) { weapon.length = weapon.length + 1; weapon.picture = weapon.picture + '<img src="image/ar/nemesisu.png">'; }
 
     if (we_smg_purauraa.checked) { weapon.length = weapon.length + 1; weapon.picture = weapon.picture + '<img src="image/smg/puraura-.png">'; }
     if (we_smg_boruto.checked) { weapon.length = weapon.length + 1; weapon.picture = weapon.picture + '<img src="image/smg/boruto.png">'; }
