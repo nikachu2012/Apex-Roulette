@@ -189,6 +189,7 @@ apex.stopDoubleRoulette = function () {
 
 apex.setting_col = `
     <h5>ルーレット設定</h5>
+    2024-08-09追記：思ったより使われているみたいなのでネメシスを追加しました<br>
 
     <input class="form-check-input" type="checkbox" id="subWeaponRoulette"></br>
 
