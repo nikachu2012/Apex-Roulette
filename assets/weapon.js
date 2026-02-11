@@ -59,7 +59,7 @@ window.onload = function () {
     we_ar_furatora = document.getElementById('we_ar_furatora')
     we_ar_habokku = document.getElementById('we_ar_habokku')
     we_ar_hemurokku = document.getElementById('we_ar_hemurokku')
-    we_ar_hemurokku = document.getElementById('we_ar_nemesisu')
+    we_ar_nemesisu = document.getElementById('we_ar_nemesisu')
 
     we_smg_purauraa = document.getElementById('we_smg_puraura-')
     we_smg_boruto = document.getElementById('we_smg_boruto')
@@ -149,14 +149,14 @@ apex.pushSubRoulette = function () {
 
     var option1 = {
         speed: 20,
-        duration: 10,
+        duration: 1,
         stopImageNumber: randomWeapon1
     }
     $('div.roulette_1').roulette(option1);
 
     var option2 = {
         speed: 20,
-        duration: 10,
+        duration: 1,
         stopImageNumber: randomWeapon2
     }
     $('div.roulette_2').roulette(option2);

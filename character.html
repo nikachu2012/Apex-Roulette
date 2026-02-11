@@ -55,9 +55,131 @@
         </div>
     </nav>
 
-    <!-- data -->
+    <div class="container">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-md-auto">
+                <div id="roulette_col"></div>
+            </div>
+            <div class="col" id="setting_col">
+            </div>
+        </div>
+    </div>
 
-    <h1>このページはただいま工事中です。</h1>
+    <!-- キャラクターの設定モーダル -->
+    <div class="modal fade" id="CharacterONOFFmodal" tabindex="-1" aria-labelledby="characterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="characterModalLabel">出すキャラクターの設定</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                   <!-- カテゴリ：アサルト -->
+                    <h6 class="mb-2">アサルト</h6>
+                    <input class="form-check-input" type="checkbox" id="ch_bangalore" data-category="assault" checked>
+                    <label class="form-check-label" for="ch_bangalore"><img class="weapon-modal-image" src="image/character/バンガロール.jpg">&nbsp;バンガロール</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_revenant" data-category="assault" checked>
+                    <label class="form-check-label" for="ch_revenant"><img class="weapon-modal-image" src="image/character/レヴナント.jpg">&nbsp;レヴナント</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_fuse" data-category="assault" checked>
+                    <label class="form-check-label" for="ch_fuse"><img class="weapon-modal-image" src="image/character/ヒューズ.jpg">&nbsp;ヒューズ</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_madmaggie" data-category="assault" checked>
+                    <label class="form-check-label" for="ch_madmaggie"><img class="weapon-modal-image" src="image/character/マッドマギー.jpg">&nbsp;マッドマギー</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_ballistic" data-category="assault" checked>
+                    <label class="form-check-label" for="ch_ballistic"><img class="weapon-modal-image" src="image/character/バリスティック.jpg">&nbsp;バリスティック</label><br>
+
+                    <br>
+                    <!-- カテゴリ：スカーミッシャー -->
+                    <h6 class="mb-2">スカーミッシャー</h6>
+                    <input class="form-check-input" type="checkbox" id="ch_pathfinder" data-category="skirmisher" checked>
+                    <label class="form-check-label" for="ch_pathfinder"><img class="weapon-modal-image" src="image/character/パスファインダー.jpg">&nbsp;パスファインダー</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_wraith" data-category="skirmisher" checked>
+                    <label class="form-check-label" for="ch_wraith"><img class="weapon-modal-image" src="image/character/レイス.jpg">&nbsp;レイス</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_octane" data-category="skirmisher" checked>
+                    <label class="form-check-label" for="ch_octane"><img class="weapon-modal-image" src="image/character/オクタン.jpg">&nbsp;オクタン</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_horizon" data-category="skirmisher" checked>
+                    <label class="form-check-label" for="ch_horizon"><img class="weapon-modal-image" src="image/character/ホライゾン.jpg">&nbsp;ホライゾン</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_ash" data-category="skirmisher" checked>
+                    <label class="form-check-label" for="ch_ash"><img class="weapon-modal-image" src="image/character/アッシュ.jpg">&nbsp;アッシュ</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_olter" data-category="skirmisher" checked>
+                    <label class="form-check-label" for="ch_olter"><img class="weapon-modal-image" src="image/character/オルター.jpg">&nbsp;オルター</label><br>
+
+                    <br>
+                    <!-- カテゴリ：リコン -->
+                    <h6 class="mb-2">リコン</h6>
+                    <input class="form-check-input" type="checkbox" id="ch_bloodhound" data-category="recon" checked>
+                    <label class="form-check-label" for="ch_bloodhound"><img class="weapon-modal-image" src="image/character/ブラッドハウンド.jpg">&nbsp;ブラッドハウンド</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_crypto" data-category="recon" checked>
+                    <label class="form-check-label" for="ch_crypto"><img class="weapon-modal-image" src="image/character/クリプト.jpg">&nbsp;クリプト</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_valkyrie" data-category="recon" checked>
+                    <label class="form-check-label" for="ch_valkyrie"><img class="weapon-modal-image" src="image/character/ヴァルキリー.jpg">&nbsp;ヴァルキリー</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_sia" data-category="recon" checked>
+                    <label class="form-check-label" for="ch_sia"><img class="weapon-modal-image" src="image/character/シア.jpg">&nbsp;シア</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_vantage" data-category="recon" checked>
+                    <label class="form-check-label" for="ch_vantage"><img class="weapon-modal-image" src="image/character/ヴァンテージ.jpg">&nbsp;ヴァンテージ</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_sparrow" data-category="recon" checked>
+                    <label class="form-check-label" for="ch_sparrow"><img class="weapon-modal-image" src="image/character/スパロー.jpg">&nbsp;スパロー</label><br>
+
+                    <br>
+                    <!-- カテゴリ：サポート -->
+                    <h6 class="mb-2">サポート</h6>
+                    <input class="form-check-input" type="checkbox" id="ch_gibraltar" data-category="support" checked>
+                    <label class="form-check-label" for="ch_gibraltar"><img class="weapon-modal-image" src="image/character/ジブラルタル.jpg">&nbsp;ジブラルタル</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_lifeline" data-category="support" checked>
+                    <label class="form-check-label" for="ch_lifeline"><img class="weapon-modal-image" src="image/character/ライフライン.jpg">&nbsp;ライフライン</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_mirage" data-category="support" checked>
+                    <label class="form-check-label" for="ch_mirage"><img class="weapon-modal-image" src="image/character/ミラージュ.jpg">&nbsp;ミラージュ</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_loba" data-category="support" checked>
+                    <label class="form-check-label" for="ch_loba"><img class="weapon-modal-image" src="image/character/ローバ.jpg">&nbsp;ローバ</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_newcastle" data-category="support" checked>
+                    <label class="form-check-label" for="ch_newcastle"><img class="weapon-modal-image" src="image/character/ニューキャッスル.jpg">&nbsp;ニューキャッスル</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_conduit" data-category="support" checked>
+                    <label class="form-check-label" for="ch_conduit"><img class="weapon-modal-image" src="image/character/コンジット.jpg">&nbsp;コンジット</label><br>
+
+                    <br>
+                    <!-- カテゴリ：コントローラー -->
+                    <h6 class="mb-2">コントローラー</h6>
+                    <input class="form-check-input" type="checkbox" id="ch_caustic" data-category="controller" checked>
+                    <label class="form-check-label" for="ch_caustic"><img class="weapon-modal-image" src="image/character/コースティック.jpg">&nbsp;コースティック</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_wattson" data-category="controller" checked>
+                    <label class="form-check-label" for="ch_wattson"><img class="weapon-modal-image" src="image/character/ワットソン.jpg">&nbsp;ワットソン</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_rampart" data-category="controller" checked>
+                    <label class="form-check-label" for="ch_rampart"><img class="weapon-modal-image" src="image/character/ランパート.jpg">&nbsp;ランパート</label><br>
+
+                    <input class="form-check-input" type="checkbox" id="ch_catalyst" data-category="controller" checked>
+                    <label class="form-check-label" for="ch_catalyst"><img class="weapon-modal-image" src="image/character/カタリスト.jpg">&nbsp;カタリスト</label><br>
+
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                    <button type="button" class="btn btn-primary" onclick="saveCharacterModal()">決定</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin></script>
@@ -65,6 +187,7 @@
 
     <script src="assets/roulette.min.js"></script>
 
+    <script src="assets/character.js"></script>
     <script src="assets/main.js"></script>
 </body>
 </html>
